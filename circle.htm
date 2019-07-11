@@ -1,0 +1,198 @@
+<html>
+    <head>
+    <!-- link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css" -->
+    <!-- link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css" -->
+    <!-- End Wayback Rewrite JS Include -->
+
+    <title>circle</title>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+    <meta content="" name="GENERATOR">
+    <style>.circles {
+            COLOR: #ffffff; FONT-FAMILY: Verdana; FONT-SIZE: 18px; POSITION: absolute; VISIBILITY: hidden; Z-INDEX: 2
+    }
+    </style>
+
+    <style>.logo {
+            COLOR: #ffffff; FONT-FAMILY: Verdana; FONT-SIZE: 24px; POSITION: absolute; VISIBILITY: hidden; Z-INDEX: 2
+    }
+    </style>
+
+    </head>
+    <body bgcolor="#3F00FF">
+    <div>
+    <script language="JavaScript">
+
+        function showObject(object) {
+            object.visibility = VISIBLE;
+            }
+
+        function hideObject(object) {
+            object.visibility = HIDDEN;
+            }
+
+        function rotateObjects()
+
+          { for (var i = 0; i < pos.length; i++)
+                    {
+                    pos[i] += inc;
+                    objects[i].style.visibility = 'visible';
+                    objects[i].style.left = (r * Math.cos(pos[i])) + xoff
+                    objects[i].style.top = (r * Math.sin(pos[i])) + yoff;
+                    }
+
+            rotateTimer = setTimeout("rotateObjects()", 75);
+          }
+
+
+        function vertical_up(pos_x,v,x_offset,y_offset)
+
+          {
+            for (var a = 0; a < pos_x*v; a++)
+            {
+                    var logoElem = document.getElementById("logo");
+                    logoElem.style.visibility = 'visible';
+                    logoElem.style.left = y_offset;
+                    logoElem.style.top = pos_x+x_offset-a/v;
+            }
+
+          }
+      function vertical_up1(pos_x,v,x_offset,y_offset)
+
+          {
+            for (var a = 0; a < pos_x*v; a++)
+            {
+
+                    document.go.visibility = 'visible';
+                    document.go.left = y_offset;
+                    document.go.top = pos_x+x_offset-a/v;
+            }
+         }
+
+       function initObjects()
+           {
+            objects = new Array(fly1, fly2, fly3, fly4, fly5, fly6);
+            pos = new Array();        pos[0] = 0;
+
+            for (var i = 1; i < objects.length; i++)
+                 {
+                     pos[i] = parseFloat(pos[i - 1] + ((2 * pi) / objects.length));
+                 }
+
+            rotateObjects();
+           }
+
+            //var objects;
+
+            var pos;
+            var r = 300;        // radius
+            var xoff = window.innerWidth/2 - 80;     // x offset
+            var yoff = window.innerHeight/2 - 60;     // y offset
+            var pi = Math.PI;   // get pi
+            var inc = pi / 250; // degrees per rotation cycle/ Tempo
+            var objects;        // objects to be rotated
+            var pos;            // position for objects
+
+    </script>
+
+
+    <div class="logo" id="mitte">
+    <center>
+    <img src="images/dummy.png" width="200" height="150"><p>
+
+    </p>
+    </center>
+
+    <target="body"></target="body"></div>
+
+    <script language="JavaScript">
+
+        //var isNS = (navigator.appName == "Netscape" && parseInt(navigator.appVersion) >= 4);
+        var HIDDEN = 'hidden';
+        var VISIBLE = 'visible';
+        //var obj_mitte = (isNS) ? document.mitte : document.all.mitte.style;
+        var obj_mitte = document.getElementById("mitte");
+
+        obj_mitte.style.visibility = 'visible';
+        obj_mitte.style.left = window.innerWidth/2 - 125;
+        obj_mitte.style.top =  window.innerHeight/2 - 75;
+
+    </script>
+
+    <div class="circles" id="lyr1">
+    <center>
+    <a href="start.html" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='classroom2005'; return true" target="_top">
+    <img src="images/dummy.png" alt="Hier geht's zu unseren Wettbewerbsseiten!" width="100" height="75" border="0"></a>
+    <br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Classroom 2005</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr2">
+    <center>
+    <a href="hs.html" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Schulinformation'; return true" target="frame 2">
+    <img src="images/dummy.png" alt="Schulinformation" width="100" height="75" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Schulinformation</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr3">
+    <center>
+    <a href="loglin.html" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Logo &amp; Links'; return true" target="frame 2">
+    <img src="images/dummy.png" alt="Schullogo" width="100" height="75" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Schullogo</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr4">
+    <center>
+    <a href="startschue.htm" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Schülerseiten'; return true" target="frame 2">
+    <img src="images/dummy.png" alt="Zu den Schülerseiten" width="100" height="75" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Schülerseiten</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr5">
+    <center>
+    <a href="starttheater.htm" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Theatergruppe'; return true" target="frame 2">
+    <img src="images/dummy.png" alt="Hier geht's zur Theatergruppe" width="100" height="75" border="0"></a>
+    <br>
+    <b><font font="" size="4" face="Comic Sans MS" color="#00FF00">Theatergruppe</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr6">
+    <center>
+    <a href="proj.htm" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Projekte'; return true" target="frame 2">
+    <img alt="aktuelle Projekte" src="images/dummy.png" width="100" height="75" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Projekte</font></b>
+    </center></div>
+
+    <script language="JavaScript">
+
+        //var isNS = (navigator.appName == "Netscape" && parseInt(navigator.appVersion) >= 4);
+        var HIDDEN = 'hidden';
+        var VISIBLE = 'visible';
+        //var fly1 = (isNS) ? document.lyr1 : document.all.lyr1.style;
+        //var fly2 = (isNS) ? document.lyr2 : document.all.lyr2.style;
+        //var fly3 = (isNS) ? document.lyr3 : document.all.lyr3.style;
+        //var fly4 = (isNS) ? document.lyr4 : document.all.lyr4.style;
+        //var fly5 = (isNS) ? document.lyr5 : document.all.lyr5.style;
+        //var fly6 = (isNS) ? document.lyr6 : document.all.lyr6.style;
+        var fly1 = document.getElementById("lyr1");
+        var fly2 = document.getElementById("lyr2");
+        var fly3 = document.getElementById("lyr3");
+        var fly4 = document.getElementById("lyr4");
+        var fly5 = document.getElementById("lyr5");
+        var fly6 = document.getElementById("lyr6");
+
+           initObjects();
+
+    </script>
+
+    <script language="JavaScript">
+
+       if (navigator.appName != "Netscape")
+            {
+            document.write("<BR><BR>");
+            }
+
+    </script>
+
+
+    </div></body>
+</html>

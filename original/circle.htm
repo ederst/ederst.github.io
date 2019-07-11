@@ -1,0 +1,193 @@
+<html>
+    <head><script src="//archive.org/includes/analytics.js?v=cf34f82" type="text/javascript"></script>
+    <script type="text/javascript">window.addEventListener('DOMContentLoaded',function(){var v=archive_analytics.values;v.service='wb';v.server_name='wwwb-app23.us.archive.org';v.server_ms=296;archive_analytics.send_pageview({});});</script><script type="text/javascript" src="/_static/js/ait-client-rewrite.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    WB_wombat_Init("https://web.archive.org/web", "20020401081236", "www.veitsch.at:80");
+    </script>
+    <script type="text/javascript" src="/_static/js/wbhack.js" charset="utf-8"></script>
+    <script type="text/javascript">
+    __wbhack.init('https://web.archive.org/web');
+    </script>
+    <link rel="stylesheet" type="text/css" href="/_static/css/banner-styles.css">
+    <link rel="stylesheet" type="text/css" href="/_static/css/iconochive.css">
+    <!-- End Wayback Rewrite JS Include -->
+
+    <title>circle</title>
+    <meta content="text/html; charset=windows-1252" http-equiv="Content-Type">
+    <meta content="" name="GENERATOR">
+    <style>.circles {
+            COLOR: #ffffff; FONT-FAMILY: Verdana; FONT-SIZE: 18px; POSITION: absolute; VISIBILITY: hidden; Z-INDEX: 2
+    }
+    </style>
+
+    <style>.logo {
+            COLOR: #ffffff; FONT-FAMILY: Verdana; FONT-SIZE: 24px; POSITION: absolute; VISIBILITY: hidden; Z-INDEX: 2
+    }
+    </style>
+
+    </head>
+    <body bgcolor="#3F00FF">
+    <div>
+    <script language="JavaScript">
+
+        function showObject(object) {
+            object.visibility = VISIBLE;
+            }
+
+        function hideObject(object) {
+            object.visibility = HIDDEN;
+            }
+
+        function rotateObjects()
+
+          { for (var i = 0; i < pos.length; i++)
+                    {
+                    pos[i] += inc; objects[i].visibility = 'visible';
+                    objects[i].left = (r * Math.cos(pos[i])) + xoff
+                    objects[i].top = (r * Math.sin(pos[i])) + yoff;
+                    }
+
+            rotateTimer = setTimeout("rotateObjects()", 75);
+          }
+
+
+        function vertical_up(pos_x,v,x_offset,y_offset)
+
+          {
+            for (var a = 0; a < pos_x*v; a++)
+            {
+
+                    document.logo.visibility = 'visible';
+                    document.logo.left = y_offset;
+                    document.logo.top = pos_x+x_offset-a/v;
+            }
+
+          }
+      function vertical_up1(pos_x,v,x_offset,y_offset)
+
+          {
+            for (var a = 0; a < pos_x*v; a++)
+            {
+
+                    document.go.visibility = 'visible';
+                    document.go.left = y_offset;
+                    document.go.top = pos_x+x_offset-a/v;
+            }
+         }
+
+       function initObjects()
+           {
+            objects = new Array(fly1, fly2, fly3, fly4, fly5, fly6);
+            pos = new Array();        pos[0] = 0;
+
+            for (var i = 1; i < objects.length; i++)
+                 { pos[i] = parseFloat(pos[i - 1] + ((2 * pi) / objects.length));
+                 }
+            rotateObjects();
+           }
+
+                var objects;
+
+            var pos;
+            var r = 230;        // radius
+            var xoff = 0;     // x offset
+            var yoff = 230;     // y offset
+            var pi = Math.PI;   // get pi
+            var inc = pi / 170; // degrees per rotation cycle/ Tempo
+            var objects;        // objects to be rotated
+            var pos;            // position for objects
+
+    </script>
+
+    <div class="logo" id="mitte">
+    <center><img src="/web/20020401081236im_/http://www.veitsch.at/hsv/pictures/hsvt4c.gif" width="250" height="150"><p>
+
+    </p></center>
+
+    <target="body"></target="body"></div>
+
+    <script language="JavaScript">
+
+        var isNS = (navigator.appName == "Netscape" && parseInt(navigator.appVersion) >= 4);
+        var HIDDEN = (isNS) ? 'hide' : 'hidden';
+        var VISIBLE = (isNS) ? 'show' : 'visible';
+        var obj_mitte = (isNS) ? document.mitte : document.all.mitte.style;
+
+        obj_mitte.visibility = 'visible';
+        obj_mitte.left = 0;
+        obj_mitte.top = 220;
+
+    </script>
+
+    <div class="circles" id="lyr1">
+    <center>
+    <a href="start.html" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='classroom2005'; return true" target="_top">
+    <img src="/web/20020401081236im_/http://www.veitsch.at/hsv/pictures/company.gif" alt="Hier geht's zu unseren Wettbewerbsseiten!" width="141" height="81" border="0"></a>
+    <br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Classroom 2005</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr2">
+    <center>
+    <a href="hs.html" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Schulinformation'; return true" target="frame 2">
+    <img src="/web/20020401081236im_/http://www.veitsch.at/hsv/pictures/info.gif" alt="Schulinformation" width="90" height="80" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Schulinformation</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr3">
+    <center>
+    <a href="loglin.html" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Logo &amp; Links'; return true" target="frame 2">
+    <img src="/web/20020401081236im_/http://www.veitsch.at/hsv/pictures/logo.gif" alt="Schullogo" width="80" height="80" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Schullogo</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr4">
+    <center>
+    <a href="startschue.htm" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Schülerseiten'; return true" target="frame 2">
+    <img src="/web/20020401081236im_/http://www.veitsch.at/hsv/pictures/eule.gif" alt="Zu den Schülerseiten" width="80" height="80" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Schülerseiten</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr5">
+    <center>
+    <a href="starttheater.htm" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Theatergruppe'; return true" target="frame 2">
+    <img src="/web/20020401081236im_/http://www.veitsch.at/hsv/pictures/mask.gif" alt="Hier geht's zur Theatergruppe" width="130" height="70" border="0"></a>
+    <br>
+    <b><font font="" size="4" face="Comic Sans MS" color="#00FF00">Theatergruppe</font></b>
+    </center></div>
+
+    <div class="circles" id="lyr6">
+    <center>
+    <a href="proj.htm" onmouseout="window.status='HS-Veitsch'; return true" onmouseover="window.status='Projekte'; return true" target="frame 2">
+    <img alt="aktuelle Projekte" src="/web/20020401081236im_/http://www.veitsch.at/hsv/pictures/projekt.gif" width="65" height="65" border="0"></a><br>
+    <b><font size="4" face="Comic Sans MS" color="#00FF00">Projekte</font></b>
+    </center></div>
+
+    <script language="JavaScript">
+
+        var isNS = (navigator.appName == "Netscape" && parseInt(navigator.appVersion) >= 4);
+        var HIDDEN = (isNS) ? 'hide' : 'hidden';
+        var VISIBLE = (isNS) ? 'show' : 'visible';
+        var fly1 = (isNS) ? document.lyr1 : document.all.lyr1.style;
+        var fly2 = (isNS) ? document.lyr2 : document.all.lyr2.style;
+        var fly3 = (isNS) ? document.lyr3 : document.all.lyr3.style;
+        var fly4 = (isNS) ? document.lyr4 : document.all.lyr4.style;
+        var fly5 = (isNS) ? document.lyr5 : document.all.lyr5.style;
+        var fly6 = (isNS) ? document.lyr6 : document.all.lyr6.style;
+
+           initObjects();
+
+    </script>
+
+    <script language="JavaScript">
+
+       if (navigator.appName != "Netscape")
+            {
+            document.write("<BR><BR>");
+            }
+
+    </script>
+
+
+    </div></body>
+</html>
