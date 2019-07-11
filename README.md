@@ -1,4 +1,4 @@
-# HS Veitsch (Vetisch Elementary School)
+# HS Veitsch (Veitsch Elementary School)
 
 A Blast From the Past
 
