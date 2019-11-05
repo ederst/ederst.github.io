@@ -1,7 +1,6 @@
 <html>
     <head>
         <title>Name Simplifier - Life is too short for long names</title>
-        <script src="js/js.js"></script>
         <link rel="stylesheet" href="css/css.css">
         <link rel="stylesheet" href="css/gh-ribbon.css" />
     </head>
@@ -25,10 +24,10 @@
                 </span>
             </h1>
             <div class="inner-wrap">
-                <label>Complex Name:<input type="text" id="complexName" value="John Smith"/></label>
-                <label>Simple Name:<input type="text" id="simpleName" readonly/></label>
+                <label>Complex Name:<input type="text" id="complexName" value="John Smith" onfocus="select()" autofocus/></label>
+                <label>Simple Name:<input type="text" id="simpleName" onfocus="select()" readonly/></label>
                 <div class="button-section">
-                    <input type="submit" name="Simplify" value="Simplify!" onclick="return simplifyName()"/>
+                    <input id="simplifyBtn" type="submit" name="Simplify" value="Simplify!" onclick="simplifyName()"/>
                     <span class="privacy-policy" style="margin-top: 0">
                       Style "Form Style 10" by <a href="https://www.sanwebe.com/2014/08/css-html-forms-designs" target="_blank">sanwebe.com</a><br />
                       Github ribbon by <a href="https://github.com/simonwhitaker/github-fork-ribbon-css" target="_blank">simonwhitaker</a><br />
@@ -37,5 +36,6 @@
                 </div>
             </div>
         </div>
+        <script src="js/js.js"></script>
     </body>
 </html>

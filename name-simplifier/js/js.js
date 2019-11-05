@@ -7,4 +7,14 @@ function simplifyName() {
         var simpleName = complexName[0] + simpleLength.toString() + complexName[simpleLength + 1];
         document.getElementById("simpleName").value = simpleName;
     }
-  }
+}
+
+var input = document.getElementById("complexName");
+
+input.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("simplifyBtn").click();
+        document.getElementById("simpleName").focus();
+    }
+});
