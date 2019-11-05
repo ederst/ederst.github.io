@@ -1,0 +1,42 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: name-simplifier
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: name-simplifier
+  template:
+    metadata:
+      labels:
+        app: name-simplifier
+    spec:
+      containers:
+      - image: ederst/name-simplifier:0.1
+        name: name-simplifier
+        resources:
+          requests:
+            cpu: '100m'
+            memory: '5Mi'
+          limits:
+            cpu: '100m'
+            memory: '64Mi'
+        ports:
+          - containerPort: 8080
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: name-simplifier
+  annotations:
+    dev.okteto.com/auto-ingress: "true"
+spec:
+  type: ClusterIP
+  ports:
+  - name: "name-simplifier"
+    port: 8080
+  selector:
+    app: name-simplifier
