@@ -13,7 +13,7 @@ spec:
         app: name-simplifier
     spec:
       containers:
-      - image: ederst/name-simplifier:0.2
+      - image: ederst/name-simplifier:0.3
         name: name-simplifier
         resources:
           requests:
