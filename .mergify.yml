@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: "Automatic merge to develop"
+    conditions:
+      - base=develop
+      - label!=WIP
+      - label=merge
+      - status-success=build (12.x)
+    actions:
+      merge:
+        method: rebase
