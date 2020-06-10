@@ -10,7 +10,8 @@
     "build": "gatsby build",
     "clean": "gatsby clean",
     "start": "gatsby develop",
-    "deploy": "gatsby build && gh-pages -d public -b master"
+    "deploy": "gatsby build && gh-pages -d public -b master",
+    "lint": "eslint -c .eslintrc ."
   },
   "dependencies": {
     "gatsby": "^2.18.7",
